@@ -1,0 +1,29 @@
+Scala is object-oriented (every value is an object) and functional (every function is a value). 
+So every function is an object.
+
+Scala is compiled into Java Byte Code which is executed by JVM. Scala and Java have a common runtime platform.
+
+When using Mac, create HelloWorld.scala file, then open terminal, it shows this error:
+~/Desktop$ scalac HelloWorld.scala 
+~/Desktop$ scala HelloWorld
+No such file or class on classpath: HelloWorld
+
+That is because the Java env in Mac does not set up correctly.
+~/Desktop$ scala -cp . HelloWorld
+Hello World
+
+Scala Packages: A package is a named module of code.
+
+Scala Variable Declaration: Syntax
+val or var VariableName: DataType = [Initial Value]
+
+Scala supports multiple assignments:
+val (myVar1: Int, myVar2: String) = Pair(40, "Foo")
+It returns a tuple (Holds collection of Objects of different types)
+
+Variables in Scala can have three different scopes: fields, method parameters, local variables.
+https://www.tutorialspoint.com/scala/scala_variables.htm
+Fields: variables that belong to an object.
+Method Parameters: variables which are used to pass the value inside a method, when the method is called.
+Local variables: variables that declared inside a method.
+
